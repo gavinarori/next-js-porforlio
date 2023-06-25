@@ -23,28 +23,28 @@ export default function Navbar({
         <span className="sr-only">Open sidebar</span>
         <MenuIcon className="h-6 w-6" aria-hidden="true" />
       </button>
-       <div className='flex gap-2 mt-1 flex-row'>
-       <a href='' className="w-8 h-8 rounded-full overflow-hidden">
+       <div className='flex gap-2 mt-1 flex-row '>
+       <a href='' className="w-6 h-6 rounded-full overflow- bg-blue-400">
               <Image
                 src="/facebook.png"
                 alt='User'
-                width={30}
-                height={30}
+                width={40}
+                height={40}
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2PYsGHDfwAHNAMQumvbogAAAABJRU5ErkJggg=="
               />
             </a>
-            <a href='' className="w-8 h-8 rounded-full overflow-hidden">
+            <a href='' className="w-6 h-6 rounded-full overflow-hidden bg-pink-400">
               <Image
                 src="/instagram.png"
                 alt='User'
-                width={30}
-                height={30}
+                width={40}
+                height={40}
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2PYsGHDfwAHNAMQumvbogAAAABJRU5ErkJggg=="
               />
             </a>
-            <a href='' className="w-8 h-8 rounded-full overflow-hidden">
+            <a href='' className="w-6 h-6 rounded-full overflow-hidden">
               <Image
                 src="/twitter.png"
                 alt='User'

@@ -26,18 +26,17 @@ export default function Profile() {
               alt="emage"
               width={300}
               height={300}
+              priority
             />
           </div>
           <div className="mt-6 sm:flex-1 sm:min-w-0 sm:flex sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
             <div className="flex min-w-0 flex-1 items-center space-x-2">
               <h1 className="text-2xl font-semibold text-white truncate">
-                gavinarori
+                Gavin Arori
               </h1>
-              
-                <CheckInCircleIcon className="w-6 h-6 text-[#0070F3]" />
-
-            </div>
-              <div className="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
+              <CheckInCircleIcon className="w-6 h-6 text-[#0070F3]" />
+              </div>
+        <div className="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
                 <a
                   href={`https://github.com/gavinarori`}
                   target="_blank"
@@ -48,10 +47,21 @@ export default function Profile() {
                   <span>View GitHub Profile</span>
                 </a>
               </div>
-
           </div>
         </div>
+        <div className='flex flex-col  mt-1 sm:ml-[180px] ml-2'>
+                <h3 className='text-2sm font-semibold text-white truncate '>
+                  Front-end developer
+                  </h3>
+       </div>
       </div>
+      
+      
+    <div className='mt-6 sm:flex-1 sm:min-w-0 sm:flex sm:items-center  sm:space-x-6 sm:pb-1 text-sm tracking-wider leading-6 text-white font-mono prose prose-headings:text-white prose-a:text-white'>
+      <h4 className=' ml-3 font-semibold text-white truncate'>Professional Services</h4>
+      <h4 className=' ml-3 font-semibold text-white truncate'>nyeri, Kenya</h4>
+      <h4 className='ml-3 font-semibold text-white truncate'>joined September 2021</h4>
+    </div>
 
       {/* Tabs */}
       <div className="mt-6 sm:mt-2 2xl:mt-5">
@@ -61,11 +71,11 @@ export default function Profile() {
               {tabs.map((tab) => (
                 <button
                   key={tab.name}
-                  disabled={tab.name !== 'Profile'}
+                  //disabled={tab.name !== 'Profile'}
                   className={`${
                     tab.name === 'Profile'
                       ? 'border-white text-white'
-                      : 'border-transparent text-gray-400 cursor-not-allowed'
+                      : 'border-transparent text-gray-400 cursor-pointer'
                   }
                     whitespace-nowrap py-3 px-1 border-b-2 font-medium text-sm font-mono`}
                 >
@@ -84,7 +94,7 @@ export default function Profile() {
           <article className="mt-3 max-w-2xl text-sm tracking-wider leading-6 text-white font-mono prose prose-headings:text-white prose-a:text-white">
             <p>Tincidunt quam neque in cursus viverra orci, dapibus nec tristique. Nullam ut sit dolor consectetur urna, dui cras nec sed. Cursus risus congue arcu aenean posuere aliquam.
 
-Et vivamus lorem pulvinar nascetur non. Pulvinar a sed platea rhoncus ac mauris amet. Urna, sem pretium sit pretium urna, senectus vitae. Scelerisque fermentum, cursus felis dui suspendisse velit pharetra. Augue et duis cursus maecenas eget quam lectus. Accumsan vitae nascetur pharetra rhoncus praesent dictum risus suspendisse.`;
+Et vivamus lorem pulvinar nascetur non. Pulvinar a sed platea rhoncus ac mauris amet. Urna, sem pretium sit pretium urna, senectus vitae. Scelerisque fermentum, cursus felis dui suspendisse velit pharetra. Augue et duis cursus maecenas eget quam lectus. Accumsan vitae nascetur pharetra rhoncus praesent dictum risus suspendisse.
 
 
 </p>
