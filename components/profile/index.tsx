@@ -1,14 +1,25 @@
 import {
   CheckInCircleIcon,
+  EditIcon,
+  XIcon,
   GitHubIcon,
+  UploadIcon
 } from '@/components/icons';
 import Image from 'next/image';
+import { useState } from 'react';
+
 
 export const profileWidth = 'max-w-5xl mx-auto px-4 sm:px-6 lg:px-8';
 export const gradients = 'bg-gradient-to-l from-pink-300 via-purple-300 to-indigo-400';
   
   
 export default function Profile() {
+
+  const [activeTab, setActiveTab] = useState('Profile');
+
+  const handleTabClick = (tabName:any) => {
+    setActiveTab(tabName);
+  };
 
   return (
     <div className="min-h-screen pb-20">
@@ -56,11 +67,24 @@ export default function Profile() {
        </div>
       </div>
       
-      
-    <div className='mt-6 sm:flex-1 sm:min-w-0 sm:flex sm:items-center  sm:space-x-6 sm:pb-1 text-sm tracking-wider leading-6 text-white font-mono prose prose-headings:text-white prose-a:text-white'>
-      <h4 className=' ml-3 font-semibold text-white truncate'>Professional Services</h4>
-      <h4 className=' ml-3 font-semibold text-white truncate'>nyeri, Kenya</h4>
-      <h4 className='ml-3 font-semibold text-white truncate'>joined September 2021</h4>
+      <div className='mt-6 ml-3 sm:flex-1 sm:min-w-0 sm:flex sm:items-center sm:space-x-6 sm:pb-1 text-sm tracking-wider leading-6  text-gray-400 font-mono prose prose-headings:text-gray-400 prose-a:text-gray-400'>
+      <div className="flex items-center ">
+        <EditIcon className='w-6 h-6 mt-2'/>
+        <h4 className='mr-1 mb-0 font-semibold  text-gray-400'>Professional Services</h4>
+      </div>
+      <div className="flex items-center">
+        <XIcon className='w-6 h-6 mt-2'/>
+        <h4 className='ml-1 mb-0 font-semibold  text-gray-400'>Nyeri, Kenya</h4>
+      </div>
+      <div className="flex items-center">
+        <UploadIcon className='w-6 h-6 mt-2 mr-3'/>
+        <h4 className='mb-0 font-semibold  text-gray-400'>joined September 2021</h4>
+      </div>
+    </div>
+    
+    <div className='mt-6 ml-3 sm:flex-1 sm:min-w-0 sm:flex sm:items-center sm:space-x-6 sm:pb-1 text-sm tracking-wider leading-6'>
+      <div className="flex items-center "><h4 className='mr-1 mb-0 font-semibold text-white text-2md'>4</h4 > <p className=' text-gray-400'>projects</p></div>
+      <div className="flex items-center "><h4 className='mr-1 mb-0 font-semibold text-white text-2md'>4</h4 > <p className=' text-gray-400'>Clients</p></div>
     </div>
 
       {/* Tabs */}
@@ -71,9 +95,9 @@ export default function Profile() {
               {tabs.map((tab) => (
                 <button
                   key={tab.name}
-                  //disabled={tab.name !== 'Profile'}
+                  onClick={() => handleTabClick(tab.name)}
                   className={`${
-                    tab.name === 'Profile'
+                    tab.name === activeTab
                       ? 'border-white text-white'
                       : 'border-transparent text-gray-400 cursor-pointer'
                   }
@@ -89,15 +113,23 @@ export default function Profile() {
 
       {/* Bio */}
       <div className={`${profileWidth} mt-16`}>
-        <h2 className="font-semibold font-mono text-2xl text-white">Bio</h2>
+        <h2 className="font-semibold font-mono text-2xl text-white">{activeTab}</h2>
 
           <article className="mt-3 max-w-2xl text-sm tracking-wider leading-6 text-white font-mono prose prose-headings:text-white prose-a:text-white">
+             {/* Content based on activeTab */}
+          {activeTab === 'Profile' && (
             <p>Tincidunt quam neque in cursus viverra orci, dapibus nec tristique. Nullam ut sit dolor consectetur urna, dui cras nec sed. Cursus risus congue arcu aenean posuere aliquam.
+            Et vivamus lorem pulvinar nascetur non. Pulvinar a sed platea rhoncus ac mauris amet. Urna, sem pretium sit pretium urna, senectus vitae. Scelerisque fermentum, cursus felis dui suspendisse velit pharetra. Augue et duis cursus maecenas eget quam lectus. Accumsan vitae nascetur pharetra rhoncus praesent dictum risus suspendisse.
+            </p>
+          )}
 
-Et vivamus lorem pulvinar nascetur non. Pulvinar a sed platea rhoncus ac mauris amet. Urna, sem pretium sit pretium urna, senectus vitae. Scelerisque fermentum, cursus felis dui suspendisse velit pharetra. Augue et duis cursus maecenas eget quam lectus. Accumsan vitae nascetur pharetra rhoncus praesent dictum risus suspendisse.
+          {activeTab === 'Work History' && (
+            <p>Content for Work History tab</p>
+          )}
 
-
-</p>
+          {activeTab === 'Contact' && (
+            <p>Content for Contact tab</p>
+          )}
           </article>
        
       </div>
@@ -105,7 +137,6 @@ Et vivamus lorem pulvinar nascetur non. Pulvinar a sed platea rhoncus ac mauris 
     </div>
   );
 }
-
 const tabs = [
   { name: 'Profile' },
   { name: 'Work History' },

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { DirectoryIcon, SearchIcon } from '@/components/icons';
+import DirectoryResults from './directory-results';
 
 
 export default function Directory() {
@@ -45,6 +46,7 @@ export default function Directory() {
         className="flex-1 min-h-0 overflow-y-auto overflow-x-hidden"
         aria-label="Directory"
       >
+     <DirectoryResults/>
       </nav>
     </aside>
   );

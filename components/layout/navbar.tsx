@@ -44,7 +44,7 @@ export default function Navbar({
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2PYsGHDfwAHNAMQumvbogAAAABJRU5ErkJggg=="
               />
             </a>
-            <a href='' className="w-6 h-6 rounded-full overflow-hidden">
+            <a href='' className="w-6 h-6 rounded-full overflow-hidden text-[#0070F3]">
               <Image
                 src="/twitter.png"
                 alt='User'
