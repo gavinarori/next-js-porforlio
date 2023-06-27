@@ -119,12 +119,12 @@ export default function DirectoryResults() {
                 <span className="absolute inset-0" aria-hidden="true" />
                 <div className="flex items-center space-x-1">
                   <p className="text-sm font-medium text-white truncate">
-                  Redux and Redux To..
+                  Redux and Red..
                   </p>
                     <CheckInCircleIcon className="w-4 h-4 text-white" />
                 </div>
                 <p className="text-sm text-dark-accent-5 truncate">
-                Redux is a predictable state...
+                Redux is a predictabl...
                 </p>
               </div>
             </div>
@@ -153,7 +153,7 @@ export default function DirectoryResults() {
                     <CheckInCircleIcon className="w-4 h-4 text-white" />
                 </div>
                 <p className="text-sm text-dark-accent-5 truncate">
-                React-router dom is a both...
+                React-router dom is ...
                 </p>
               </div>
             </div>
