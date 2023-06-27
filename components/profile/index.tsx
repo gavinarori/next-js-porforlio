@@ -118,17 +118,60 @@ export default function Profile() {
           <article className="mt-3 max-w-2xl text-sm tracking-wider leading-6 text-white font-mono prose prose-headings:text-white prose-a:text-white">
              {/* Content based on activeTab */}
           {activeTab === 'Profile' && (
-            <p>Tincidunt quam neque in cursus viverra orci, dapibus nec tristique. Nullam ut sit dolor consectetur urna, dui cras nec sed. Cursus risus congue arcu aenean posuere aliquam.
-            Et vivamus lorem pulvinar nascetur non. Pulvinar a sed platea rhoncus ac mauris amet. Urna, sem pretium sit pretium urna, senectus vitae. Scelerisque fermentum, cursus felis dui suspendisse velit pharetra. Augue et duis cursus maecenas eget quam lectus. Accumsan vitae nascetur pharetra rhoncus praesent dictum risus suspendisse.
+            <p>
+              I am  a frontend developer proficient in Redux, JavaScript, TypeScript, React, Next.js, CSS, and HTML.
+               With a strong focus on user experience, I specialize in creating seamless and visually appealing web applications.
+              My expertise in managing application state with Redux, building interactive interfaces using JavaScript and TypeScript, 
+              and leveraging frameworks like React and Next.js allows me to deliver high-quality, performant solutions.
             </p>
           )}
 
           {activeTab === 'Work History' && (
-            <p>Content for Work History tab</p>
+         <ul>
+          <p>
+          Freelancing as a Frontend Developer
+            [currently]
+            </p>
+          <li>Currently working as a freelance frontend developer, providing customized solutions to clients.</li>
+          <li>Collaborating remotely with clients to understand project requirements and deliver tailored frontend solutions.</li>
+          <li>Demonstrating adaptability and problem-solving skills by successfully working on diverse projects with varying specifications and challenges.</li>
+          <li>Delivering high-quality work within agreed-upon timelines, ensuring client satisfaction and building a strong professional reputation.</li>
+          
+         
+          <p className='text-2xl'>
+              Frontend Developer - Aiotech [2022]
+            </p>
+          <li>Developed and maintained frontend components for Aiotech's web applications, ensuring high-quality and performant user interfaces.</li>
+          <li>Collaborated with cross-functional teams, including designers and backend developers, to deliver seamless and visually appealing user experiences.</li>
+          <li>Implemented responsive designs using CSS and HTML, ensuring optimal accessibility and usability across various devices.</li>
+          <li>Utilized Redux, JavaScript, TypeScript, React, Next.js, CSS, and HTML to build interactive and dynamic web applications.</li>
+          <li>Played a key role in managing application state with Redux, ensuring efficient data flow and enhancing overall application performance.</li>
+          <li>Participated in code reviews, providing constructive feedback to optimize code quality and maintain coding best practices.</li>
+          <li>Actively contributed to the planning and execution of projects, meeting deadlines and delivering solutions that met client requirements.</li>
+         </ul>
           )}
 
           {activeTab === 'Contact' && (
-            <p>Content for Contact tab</p>
+            
+            <ul>
+              <h2>Find me on:</h2>
+              <li>
+              Twitter:
+              <a href="https://twitter.com/gavinogwanwa">@gavinogwanwa</a>
+              </li>
+              <li>
+              GitHub:
+              <a href="https://github.com/gavinarori">@gavinarori</a>
+              </li>
+              <li>
+              LinkedIn:
+              <a href="https://www.linkedin.com/in/gavin-arori-5b767122b">@Gavin Arori</a>
+              </li>
+              <li>
+                Email me:
+                <a href="https://mail.google.com/mail/">arorigavincode@gmail.com</a>
+              </li>
+            </ul>
           )}
           </article>
        

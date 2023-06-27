@@ -5,12 +5,12 @@ export default function DirectoryResults() {
   return (
     <ul role="list" className="relative z-0 directory-divide-y">
         <li >
-          <a href="">
+          <a href="https://my-shopping-cart-bag-application.vercel.app/">
 
             <div className="relative px-6 py-4 flex items-center space-x-3 focus-within:ring-0">
               <div className="flex-shrink-0 h-12 w-12 rounded-full overflow-hidden">
                 <Image
-                  src="/og.png"
+                  src="/images (1).png"
                   alt="projects"
                   width={300}
                   height={300}
@@ -26,7 +26,7 @@ export default function DirectoryResults() {
                     <CheckInCircleIcon className="w-4 h-4 text-white" />
                 </div>
                 <p className="text-sm text-dark-accent-5 truncate">
-                  @gavinarori
+                  style and fash...
                 </p>
               </div>
             </div>
@@ -35,12 +35,12 @@ export default function DirectoryResults() {
         </li>
 
         <li >
-          <a href="">
+          <a href="https://enchanting-pothos-b10347.netlify.app/">
 
             <div className="relative px-6 py-4 flex items-center space-x-3 focus-within:ring-0">
               <div className="flex-shrink-0 h-12 w-12 rounded-full overflow-hidden">
                 <Image
-                  src="/og.png"
+                  src="/unnamed.png"
                   alt="projects"
                   width={300}
                   height={300}
@@ -51,12 +51,12 @@ export default function DirectoryResults() {
                 <span className="absolute inset-0" aria-hidden="true" />
                 <div className="flex items-center space-x-1">
                   <p className="text-sm font-medium text-white truncate">
-                    Home shop.
+                    Movie app
                   </p>
                     <CheckInCircleIcon className="w-4 h-4 text-white" />
                 </div>
                 <p className="text-sm text-dark-accent-5 truncate">
-                  @gavinarori
+                  uses TMDI api...
                 </p>
               </div>
             </div>
@@ -65,12 +65,12 @@ export default function DirectoryResults() {
         </li>
 
         <li >
-          <a href="">
+          <a href="https://chimerical-marigold-281d31.netlify.app/">
 
             <div className="relative px-6 py-4 flex items-center space-x-3 focus-within:ring-0">
               <div className="flex-shrink-0 h-12 w-12 rounded-full overflow-hidden">
                 <Image
-                  src="/og.png"
+                  src="/90b00a3cbc0706eceef0f048eafc878f.jpg"
                   alt="projects"
                   width={300}
                   height={300}
@@ -81,12 +81,12 @@ export default function DirectoryResults() {
                 <span className="absolute inset-0" aria-hidden="true" />
                 <div className="flex items-center space-x-1">
                   <p className="text-sm font-medium text-white truncate">
-                    Home shop.
+                  my-E-commerce-app
                   </p>
                     <CheckInCircleIcon className="w-4 h-4 text-white" />
                 </div>
                 <p className="text-sm text-dark-accent-5 truncate">
-                  @gavinarori
+                There are many variations...
                 </p>
               </div>
             </div>
@@ -100,16 +100,15 @@ export default function DirectoryResults() {
         <div className='px-6 pt-6 pb-0'>
        <p className="mt-8 text-2xl text-white font-bold">Publications</p>
         <p className="mt-2 text-sm text-dark-accent-5">
-          Search directory of 
-          developers
+          Check out my articles on:
         </p>
         <li >
-          <a href="">
+          <a href="https://gavinarori.hashnode.dev/redux-and-redux-toolkitrtk">
 
             <div className="relative px-6 py-4 flex items-center space-x-3 focus-within:ring-0">
               <div className="flex-shrink-0 h-12 w-12 rounded-full overflow-hidden">
                 <Image
-                  src="/og.png"
+                  src="/CDyAuTy75.png"
                   alt="projects"
                   width={300}
                   height={300}
@@ -120,12 +119,12 @@ export default function DirectoryResults() {
                 <span className="absolute inset-0" aria-hidden="true" />
                 <div className="flex items-center space-x-1">
                   <p className="text-sm font-medium text-white truncate">
-                    Home shop.
+                  Redux and Redux To..
                   </p>
                     <CheckInCircleIcon className="w-4 h-4 text-white" />
                 </div>
                 <p className="text-sm text-dark-accent-5 truncate">
-                  @gavinarori
+                Redux is a predictable state...
                 </p>
               </div>
             </div>
@@ -133,12 +132,12 @@ export default function DirectoryResults() {
           </a>
         </li>
         <li >
-          <a href="">
+          <a href="https://medium.com/@arorigavincode/react-router-dom-7cc9df31921a">
 
             <div className="relative px-6 py-4 flex items-center space-x-3 focus-within:ring-0">
               <div className="flex-shrink-0 h-12 w-12 rounded-full overflow-hidden">
                 <Image
-                  src="/og.png"
+                  src="/medium-2020-new-logo-4DD1CA1BFF-seeklogo.com.png"
                   alt="projects"
                   width={300}
                   height={300}
@@ -149,12 +148,12 @@ export default function DirectoryResults() {
                 <span className="absolute inset-0" aria-hidden="true" />
                 <div className="flex items-center space-x-1">
                   <p className="text-sm font-medium text-white truncate">
-                    Home shop.
+                  React-router dom
                   </p>
                     <CheckInCircleIcon className="w-4 h-4 text-white" />
                 </div>
                 <p className="text-sm text-dark-accent-5 truncate">
-                  @gavinarori
+                React-router dom is a both...
                 </p>
               </div>
             </div>
@@ -168,8 +167,7 @@ export default function DirectoryResults() {
        <div className='px-6 pt-6 pb-0'>
        <p className="mt-8 text-2xl text-white font-bold">Tech stack</p>
         <p className="mt-2 text-sm text-dark-accent-5">
-          Search directory of 
-          developers
+          Current tech stack:
         </p>
         
   <div className="flex flex-col space-y-3 sm:flex-row gap-2">
