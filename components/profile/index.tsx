@@ -10,7 +10,7 @@ import { useState } from 'react';
 
 
 export const profileWidth = 'max-w-5xl mx-auto px-4 sm:px-6 lg:px-8';
-export const gradients = 'bg-gradient-to-l from-pink-300 via-purple-300 to-indigo-400';
+export const gradients = 'bg-gradient-to-r from-green-300 via-blue-500 to-purple-600';
   
   
 export default function Profile() {
