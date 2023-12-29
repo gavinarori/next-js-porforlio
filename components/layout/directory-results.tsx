@@ -4,6 +4,65 @@ import { CheckInCircleIcon } from '@/components/icons';
 export default function DirectoryResults() {
   return (
     <ul role="list" className="relative z-0 directory-divide-y">
+        
+        <li >
+          <a href="https://new-distress-app.vercel.app/">
+
+            <div className="relative px-6 py-4 flex items-center space-x-3 focus-within:ring-0">
+              <div className="flex-shrink-0 h-12 w-12 rounded-full overflow-hidden">
+                <Image
+                  src="/urgent.png"
+                  alt="projects"
+                  width={300}
+                  height={300}
+                />
+              </div>
+              <div className="flex-1 min-w-0">
+                {/* Extend touch target to entire panel */}
+                <span className="absolute inset-0" aria-hidden="true" />
+                <div className="flex items-center space-x-1">
+                  <p className="text-sm font-medium text-white truncate">
+                  Distress App
+                  </p>
+                    <CheckInCircleIcon className="w-4 h-4 text-white" />
+                </div>
+                <p className="text-sm text-dark-accent-5 truncate">
+                   safety and well-being....
+                </p>
+              </div>
+            </div>
+
+          </a>
+        </li>
+        <li >
+          <a href="https://gallery-web-five.vercel.app/">
+
+            <div className="relative px-6 py-4 flex items-center space-x-3 focus-within:ring-0">
+              <div className="flex-shrink-0 h-12 w-12 rounded-full overflow-hidden">
+                <Image
+                  src="/4503941.png"
+                  alt="projects"
+                  width={300}
+                  height={300}
+                />
+              </div>
+              <div className="flex-1 min-w-0">
+                {/* Extend touch target to entire panel */}
+                <span className="absolute inset-0" aria-hidden="true" />
+                <div className="flex items-center space-x-1">
+                  <p className="text-sm font-medium text-white truncate">
+                  gallery-web
+                  </p>
+                    <CheckInCircleIcon className="w-4 h-4 text-white" />
+                </div>
+                <p className="text-sm text-dark-accent-5 truncate">
+                Share your favorite....
+                </p>
+              </div>
+            </div>
+
+          </a>
+        </li>
         <li >
           <a href="https://my-shopping-cart-bag-application.vercel.app/">
 
