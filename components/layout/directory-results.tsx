@@ -6,7 +6,7 @@ export default function DirectoryResults() {
     <ul role="list" className="relative z-0 directory-divide-y">
         
         <li >
-          <a href="https://new-distress-app.vercel.app/">
+          <a href="#">
 
             <div className="relative px-6 py-4 flex items-center space-x-3 focus-within:ring-0">
               <div className="flex-shrink-0 h-12 w-12 rounded-full overflow-hidden">
@@ -27,7 +27,7 @@ export default function DirectoryResults() {
                     <CheckInCircleIcon className="w-4 h-4 text-white" />
                 </div>
                 <p className="text-sm text-dark-accent-5 truncate">
-                   safety and well-being....
+                   coming soon!!....
                 </p>
               </div>
             </div>
